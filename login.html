@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <script src="js/database.js"></script>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAH5KW6cxv3Gn507Joim0QR9SVSYPBRYkk",
+  authDomain: "login-505f2.firebaseapp.com",
+  projectId: "login-505f2",
+  storageBucket: "login-505f2.appspot.com",
+  messagingSenderId: "836034418843",
+  appId: "1:836034418843:web:75a3430748a5be65934e3e",
+  measurementId: "G-VBRN4REHYL"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <h1>Login</h1>
+    <div class="cold-md-4">
+        <h1 class="text-center" id="displayName"> you do not autentication</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="emailInput">E-mail</label>
+                <input type="email" name="" id="emailInput" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">Senhas</label>
+                <input type="password" name="" id="passwordInput" class="form-control" placeholder="Senha">
+            </div>
+        </form>
+        <button class="btn btn-lg btn-block btn-primary" id="anthEmailPassButton">autenticar</button>
+        <button class="btn btn-lg btn-block btn-info" id="createUserButton">criar nova conta</button>
+        <p class="text-center">-- ou --</p>
+        <p class="text-center">
+            <button class="btn btn-lg btn-dark" id="authGithHubButton"><i class="fa fab-github fa-2x"></i></button>
+            <button class="btn btn-lg btn-primary" id="authFacebookButton"><i class="fa fab-facebook fa-2x"></i></button>
+            <button class="btn btn-lg btn-info" id="authTwitterButton"><i class="fa fab-twitter fa-2x"></i></button>
+            <button class="btn btn-lg btn-danger" id="authGoogleButton"><i class="fa fab-google fa-2x"></i></button>
+            <button class="btn btn-lg btn-warning" id="authAnonymouslyButton"><i class="fa fab-user fa-2x"></i></button>
+        </p>
+    </div>
+
+    <script src="js/authentication.js"></script>
+  </body>
+</html>

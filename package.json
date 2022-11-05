@@ -1,0 +1,18 @@
+{
+  "name": "folder",
+  "version": "1.0.0",
+  "description": "projeto_firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julio111294"
+  },
+  "author": "julio cesar",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.11.0"
+  }
+}
